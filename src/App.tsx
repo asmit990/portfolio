@@ -21,7 +21,8 @@ function App() {
     { name: 'Full-Stack Development', icon: Code2, color: 'text-blue-500' },
     { name: 'DevOps', icon: Server, color: 'text-green-500' },
     { name: 'System Design', icon: Layers, color: 'text-purple-500' },
-    { name: 'Open Source', icon: GitBranch, color: 'text-orange-500' }
+    { name: 'Open Source', icon: GitBranch, color: 'text-orange-500' },
+    { name: 'language specific: java, golang', icon:language, color: 'text-yellow-500'}
   ];
 
   const projects = [
