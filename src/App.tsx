@@ -87,17 +87,17 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-200 z-50">
+      <nav className="fixed top-0 w-full bg-opacity-50 backdrop-blur-sm  z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-xl font-bold text-gray-900">Asmit</div>
+            <div className="text-xl font-bold text-blue-500 ">Asmit</div>
             <div className="hidden md:flex space-x-8">
               {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                    activeSection === item.toLowerCase() ? 'text-blue-600' : 'text-gray-700'
+                  className={`text-sm font-medium transition-colors hover:text-blue-100 ${
+                    activeSection === item.toLowerCase() ? 'text-blue-900' : 'text-blue-500'
                   }`}
                 >
                   {item}
@@ -198,7 +198,7 @@ function App() {
 
       {/* Skills Section */}
       <section id="skills" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Skills & Interests</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
